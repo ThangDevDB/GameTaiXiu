@@ -10,10 +10,12 @@ class Game extends Component {
     render() {
         return (
             <div className="game">
-                <h1 className="title-game text-center mt-5 display-4">Game Tài Xỉu</h1>
+                <div className="title-game">
+                  <h1 className="text-center mt-5 display-4 w3-animate-zoom">Game Tài Xỉu</h1>
+                </div>
                 <div className="row text-center mt-5">
                     <div className="col-4">
-                        <button className="btnGame" onClick={() =>{
+                        <button className="btnGame w3-animate-zoom" onClick={() =>{
                             this.props.datCuoc(true)
                         }}>TÀI</button>
                     </div>
@@ -21,14 +23,14 @@ class Game extends Component {
                         <Dice/>
                     </div>
                     <div className="col-4">
-                        <button className="btnGame" onClick={() => {
+                        <button className="btnGame w3-animate-zoom" onClick={() => {
                             this.props.datCuoc(false)
                         }}>XỈU</button>
                     </div>
                 </div>
                 <div className="info_game text-center">
                      <InfoGame/>
-                     <button className="btn btn-success" style={{padding: 10, marginTop: 20}}
+                     <button className="btn btn-success w3-animate-zoom" style={{padding: 10, marginTop: 20}}
                       onClick={() => {
                         this.props.playGame()
                       }}

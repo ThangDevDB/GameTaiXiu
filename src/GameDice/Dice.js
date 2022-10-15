@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 class Dice extends Component {
   renderDice = () => {
     return this.props.array_dice.map((dice, index) => {
-      return <img key={index} className="ms-2" style={{ width: 70, height: 70 }} src={dice.image} alt={dice.image} />
+      return <img key={index} className="ms-2 w3-animate-zoom" style={{ width: 70, height: 70 }} src={dice.image} alt={dice.image} />
     })
   }
   render() {
